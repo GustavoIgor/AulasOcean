@@ -1,8 +1,7 @@
 from flask import Flask, render_template, request, session, flash, redirect, url_for
 
-app = Flask("meu app")
+app = Flask(__name__)
 app.config['SECRET_KEY'] = 'pudim'
-
 
 posts = [
     {
